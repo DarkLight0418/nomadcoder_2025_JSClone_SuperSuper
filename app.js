@@ -2,18 +2,12 @@ console.log(4324324234);
 console.log("hihihi");
 console.log('가능');
 
+const amIFat = false;
+const help = null;
+let something;
+console.log(something, amIFat);  // undifined
+
+
 let a = 30;
 let b = 5;
-
-console.log(a + b);
-console.log(a / b);
-
-for (let i = 0; i < 10; i++) {
-    a += i;
-}
-
-console.log(a);
-
-const myNameWas = "messi ronaldo";
-
-console.log("good " + myNameWas);
+const c = 3;
