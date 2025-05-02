@@ -9,6 +9,19 @@ function handleTitleClick() {
     h1.style.color = "blue";  
 }
 
+function handleTitleClick2() {
+    let h1Color = h1.style.color;
+    let newColor;
+    if (h1Color === "blue") {
+        newColor = "yellow";
+    }
+    else {
+        newColor = "skyblue";
+    }
+
+    h1.style.color = newColor;  // css에서 색깔 바꾸는 게 나을 수 있음. 여러 언어 쓰면 유지보수 힘듦
+}
+
 function handleMouseEnter() {
     h1.innerText = "Mouse is here!";
 }
