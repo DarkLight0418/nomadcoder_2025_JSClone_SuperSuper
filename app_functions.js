@@ -46,6 +46,16 @@ function wifiOffline() {
     alert("wifi disconnected")
 }
 
+function handleTitleClick() {
+    const clickedClass = "active";
+    if (h1.classList.contains(clickedClass)) {
+        h1.classList.remove(clickedClass);
+    } else {
+        h1.classList.add(clickedClass);
+    }
+    
+}
+
 // console.dir(title);  // event listen on~~: (ex)onmouseup)
 
 h1.addEventListener("click", handleTitleClick);  // addEventListener(이벤트, 이벤트 발생 시 할 작업)
