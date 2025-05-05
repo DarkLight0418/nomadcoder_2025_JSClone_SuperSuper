@@ -1,7 +1,11 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+// const loginForm = document.getElementsByClassName("login-form");  
+/* querySelector() => classname, tagname 모두 검색 가능 */
+const loginInput = document.querySelector(".login-form input");
+const loginButton = document.querySelector(".login-form button");
 
-function handleTitleClick() {
-    h1.classList.toggle("clicked");
+function onleLoginBtnClick() {
+    console.log(loginInput.value);
+    console.log("click!!");
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onleLoginBtnClick);
