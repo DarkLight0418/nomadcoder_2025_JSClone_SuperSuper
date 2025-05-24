@@ -56,6 +56,13 @@ function handleTitleClick() {
     
 }
 
+
+function handleLinkClick(event) {
+    event.preventDefault();
+    console.dir(event);
+    alert("clicked!!");
+}
+
 // console.dir(title);  // event listen on~~: (ex)onmouseup)
 
 h1.addEventListener("click", handleTitleClick);  // addEventListener(이벤트, 이벤트 발생 시 할 작업)
