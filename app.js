@@ -12,12 +12,12 @@ const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
     event.preventDefault();  
-    const username = loginInput.value;
+    const wroteUsername = loginInput.value;
 
-    localStorage.setItem(USERNAME_KEY, username);
+    localStorage.setItem(USERNAME_KEY, wroteUsername);
 
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    paintGreetings(username);
+    paintGreetings(wroteUsername);
 }
 
 /* preventDefault - 어떤 이벤트의 기본 동작 등이 발생되지 않도록 막는 메서드 */
@@ -41,5 +41,5 @@ if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
-    paintGreetings(savedUsername);
+    paintGreetings(savedUsername);  // 이미 local storage에 들어가 있음 -> 매개변수 필요하지 않기도 함
 }
