@@ -1,9 +1,13 @@
 const clock = document.querySelector("h2#clock");
 
-function sayHello() {
-    console.log("Hello");
+function getClock() {
+    const date = new Date();
+    clock.innerText = (`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`)
 }
 
-setInterval(sayHello, 5000);
+getClock();
+
+setInterval(getClock, 1000);
+
 // setInterval(함수, ms); interval - (매번의)
 
